@@ -24,15 +24,15 @@ while True:
             buzzer.off()
 
             time.sleep(0.15)
-            i += 1
+            i= i=1
 
         i = 0
         while i < 16:
-            if i % 2 == 0:
+            if i == 0:
                 np[i] = (255, 0, 0)
             else:
                 np[i] = (0, 0, 0)
-            i += 1
+            i= i + 1
 
         np.write()
 
@@ -41,3 +41,4 @@ while True:
             active = 0
 
     time.sleep(0.05)
+
